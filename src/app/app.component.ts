@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { UserInterface } from './models/user';
+import {users as data} from './data/user'
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'my-app';
+
+  users: UserInterface[] = data
 }
